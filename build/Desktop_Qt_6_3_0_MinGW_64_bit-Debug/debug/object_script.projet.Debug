@@ -1,0 +1,16 @@
+debug/client.o
+debug/employe.o
+debug/equip.o
+debug/form.o
+debug/main.o
+debug/mainwindow.o
+debug/service.o
+debug/workshop.o
+debug/qrc_image.o
+debug/moc_client.o
+debug/moc_employe.o
+debug/moc_equip.o
+debug/moc_form.o
+debug/moc_mainwindow.o
+debug/moc_service.o
+debug/moc_workshop.o

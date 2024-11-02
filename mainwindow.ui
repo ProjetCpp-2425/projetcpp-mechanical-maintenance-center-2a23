@@ -1,0 +1,6326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1695</width>
+    <height>803</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FIX-IT</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+  margin: 0;
+  padding: 0;
+}
+#MainWindow{
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  }
+
+/*#comboBox{
+
+}
+#comboBox:focus {
+  border-color: #dd914f;
+  outline: none;
+  background-color: #fff;
+}*/
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1621</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="login">
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comboBox {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #cccccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for text */
+    font: 14px &quot;Arial&quot;; /* Font style */
+    color: #333333; /* Text color */
+}
+
+#comboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+#comboBox::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+#comboBox QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>English</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/icon-english-7-removebg-preview.png</normaloff>:/image/ressource/icon-english-7-removebg-preview.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>French</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/round-french-flag-icon-isolated-on-white-background-the-flag-of-france-in-a-circle-free-vector-removebg-preview.png</normaloff>
+         <disabledoff>:/image/ressource/round-french-flag-icon-isolated-on-white-background-the-flag-of-france-in-a-circle-free-vector-removebg-preview.png</disabledoff>:/image/ressource/round-french-flag-icon-isolated-on-white-background-the-flag-of-france-in-a-circle-free-vector-removebg-preview.png</iconset>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>150</y>
+        <width>821</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="image.qrc">:/image/back.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>190</y>
+        <width>411</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox{
+  height: 50%;
+
+  border-radius: 8px;
+  width: 400px;
+  height: 470px;
+  background-color: rgba(255, 255, 255, 0.5);
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>348</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_3{
+border-radius: 15px;
+background-color: #341f9d;
+color: white;
+  border: none;
+font-size: 16px;
+
+}
+#pushButton_3:hover{
+background-color: #f8943f;
+}</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>361</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Print</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_8{
+font-family: 'Segoe Print', cursive;
+color: rgb(21, 32, 73);
+  font-size: 64px;
+}</string>
+       </property>
+       <property name="text">
+        <string>WELCOME</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>201</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>180</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_5{
+border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Username</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>210</y>
+         <width>201</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>270</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#lineEdit_6{
+border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+} </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Passwrod</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="employe">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>261</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox_3{
+background:white;}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="image.qrc">:/image/ressource/fix-it.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>190</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_4{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+background-color:#F8943F;
+}
+#pushButton_4:hover{
+ background-color: #dd914f;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Employees</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des employes.png</normaloff>:/image/ressource/gestion des employes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>-60</x>
+         <y>290</y>
+         <width>331</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_5{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_5:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des clients.png</normaloff>:/image/ressource/gestion des clients.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_6
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_6:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>   Equipements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des equipements.png</normaloff>:/image/ressource/gestion des equipements.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>490</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_7
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_7:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Services </string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des services.png</normaloff>:/image/ressource/gestion des services.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>590</y>
+         <width>301</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_8
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_8:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Workshops</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des ateliers.png</normaloff>:/image/ressource/gestion des ateliers.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+QTabBar::tab {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-right: 35px;
+	margin-left:60px;
+	border-bottom:none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width:180px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-color: #e0e0e0;
+}
+
+QTabBar::tab:hover {
+    background-color: #dd914f;
+  color: white;
+}
+
+QTabBar {
+    alignment: center;
+}
+QTabBar::tab:selected:hover {
+   background: #ffffff;
+   color: black;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/list.png</normaloff>:/image/ressource/list.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>List Of Employees</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>45</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#lineEdit_7{
+  border: 2px solid #F8943F;
+  border-radius: 15px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string> Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>50</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="image.qrc">:/image/ressource/rech.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_2 {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+#comboBox_2::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+#comboBox_2::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+#comboBox_2 QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>      Salary</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>      Rate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>      Seniority</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>50</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_9{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_9:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>120</y>
+          <width>711</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget{
+border: 0.5px solid black;
+}
+</string>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Employee ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>First Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Address</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Gender</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_10
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_10:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Send E-Mail</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_11
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_11:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Generate PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>500</y>
+          <width>81</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_12
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_12:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>500</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_13
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_13:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">margin:50px</string>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/ajout.png</normaloff>:/image/ressource/ajout.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Add Employee</string>
+       </attribute>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>30</y>
+          <width>941</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>19</pointsize>
+          <bold>false</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label_13{
+border:none;
+border-top: 2px solid #dd914f;
+}</string>
+        </property>
+        <property name="text">
+         <string>                                    EMPLOYEE FORM</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>130</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>CIN</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_8{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_8:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter CIN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>180</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>First Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>230</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>280</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Gender</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>330</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>380</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_9">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>190</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_9{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_9:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter First Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_10">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>340</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_10{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_10:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Age</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_11">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>240</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_11{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_11:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Last Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_12">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>390</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_12{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_12:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Email</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>290</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_3 {
+    border: 1px solid #ccc; /* Use the same border color */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    background-color: #f9f9f9; /* Same background color as lineEdit_7 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#comboBox_3::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none; /* No left border */
+}
+
+#comboBox_3::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+}
+
+#comboBox_3 QAbstractItemView {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+    padding: 5px; /* Padding around each item */
+    font-size: 14px; /* Font size for dropdown items */
+    min-width: 120px; /* Minimum width to avoid truncation */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    margin: 0px; /* Consistent margin */
+}
+
+#comboBox_3 QAbstractItemView::item {
+    padding: 3px 15px; /* Adjust item padding for better spacing */
+    text-align: center; /* Center-align text within each item */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+        <item>
+         <property name="text">
+          <string>          Select Gender</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Female</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Other</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>180</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Job</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_13">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_13{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_13:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Phone Number</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>130</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Phone Number</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_4">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>190</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_4 {
+    border: 1px solid #ccc; /* Use the same border color */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    background-color: #f9f9f9; /* Same background color as lineEdit_7 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#comboBox_4::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none; /* No left border */
+}
+
+#comboBox_4::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+}
+
+#comboBox_4 QAbstractItemView {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+    padding: 5px; /* Padding around each item */
+    font-size: 14px; /* Font size for dropdown items */
+    min-width: 120px; /* Minimum width to avoid truncation */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    margin: 0px; /* Consistent margin */
+}
+
+#comboBox_3 QAbstractItemView::item {
+    padding: 3px 15px; /* Adjust item padding for better spacing */
+    text-align: center; /* Center-align text within each item */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>             Select job</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Mechanic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Electrician</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>            Worshop Manager</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Car Painter</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                HR Manager</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>240</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#dateEdit {
+    border: 1px solid #ccc; /* Same border color */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    background-color: #f9f9f9; /* Same background color as comboBox_3 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#dateEdit:focus {
+    border-color: #dd914f; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    background-color: #ffffff; /* White background on focus */
+}
+
+#dateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right; /* Position of the drop-down button */
+    width: 20px; /* Width of the drop-down button */
+    border-left: none; /* No left border */
+}
+
+#dateEdit::down-arrow {
+   
+    width: 10px; /* Width of the icon */
+    height: 10px; /* Height of the icon */
+}
+
+#dateEdit QCalendarWidget {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the calendar */
+    selection-background-color: #0078d7; /* Blue background for selected date */
+    selection-color: #ffffff; /* White text for selected date */
+    padding: 5px; /* Padding around the calendar */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    margin: 0px; /* Consistent margin */
+}
+
+/* Customize the items in the calendar */
+#dateEdit QCalendarWidget QAbstractItemView {
+    border: none; /* No border for the items */
+    selection-background-color: #0078d7; /* Selected item background */
+    selection-color: #ffffff; /* Selected item text color */
+}
+
+/* Styling for individual calendar days */
+#dateEdit QCalendarWidget QAbstractItemView::item {
+    padding: 8px; /* Padding for calendar items */
+    text-align: center; /* Center-align the text */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>230</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Date of Hire</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_14">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>290</y>
+          <width>171</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_14{
+margin:0px;
+ border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+#pushButton_14:hover {
+    border-color: #dd914f;
+    background-color: #fff7f2;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="image.qrc">
+          <normaloff>:/image/ressource/upload.png</normaloff>:/image/ressource/upload.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>175</width>
+          <height>175</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>280</y>
+          <width>141</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Upload 
+Employee 
+Image</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_15">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_15
+{
+	margin:0px;
+padding: 8px 16px;
+  background-color: #dd914f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#pushButton_15:hover{
+background-color: #c87f42;}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Add</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/stat.png</normaloff>:/image/ressource/stat.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_2">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_2{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="client">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>261</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox_4{
+background:white;}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="image.qrc">:/image/ressource/fix-it.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_29">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>190</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_29{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+
+}
+#pushButton_29:hover{
+ background-color: #e9ecef;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>    Employees</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des employes.png</normaloff>:/image/ressource/gestion des employes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_30">
+       <property name="geometry">
+        <rect>
+         <x>-60</x>
+         <y>290</y>
+         <width>331</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_30{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+background-color:#F8943F;
+}
+#pushButton_30:hover{
+ background-color: #dd914f;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des clients.png</normaloff>:/image/ressource/gestion des clients.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_31">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_31
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_31:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>   Equipements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des equipements.png</normaloff>:/image/ressource/gestion des equipements.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_32">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>490</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_32
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_33:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Services </string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des services.png</normaloff>:/image/ressource/gestion des services.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_33">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>590</y>
+         <width>301</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_33
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_33:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Workshops</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des ateliers.png</normaloff>:/image/ressource/gestion des ateliers.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+QTabBar::tab {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-right: 35px;
+	margin-left:60px;
+	border-bottom:none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width:180px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-color: #e0e0e0;
+}
+
+QTabBar::tab:hover {
+    background-color: #dd914f;
+  color: white;
+}
+
+QTabBar {
+    alignment: center;
+}
+QTabBar::tab:selected:hover {
+   background: #ffffff;
+   color: black;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_7">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/list.png</normaloff>:/image/ressource/list.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>List Of Clients</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_20">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>45</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#lineEdit_20{
+  border: 2px solid #F8943F;
+  border-radius: 15px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string> Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>50</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="image.qrc">:/image/ressource/rech.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_7">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_7 {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+#comboBox_7::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+#comboBox_7::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+#comboBox_7 QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>First Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Last Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_34">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>50</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_34{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_34:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>120</y>
+          <width>641</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget_3{
+border: 0.5px solid black;
+}
+</string>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Licence Plate</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>First Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Phone Number</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Breakdown</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_35">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_35
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_35:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Nearest Worshop</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_36">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_36
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_36:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Generate PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_37">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>500</y>
+          <width>81</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_37
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_37:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_38">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>500</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_38
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_38:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_39">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_39
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_39:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Scan License Plate</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">margin:50px</string>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/ajout.png</normaloff>:/image/ressource/ajout.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Add Client</string>
+       </attribute>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>30</y>
+          <width>941</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>19</pointsize>
+          <bold>false</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label_37{
+border:none;
+border-top: 2px solid #dd914f;
+}</string>
+        </property>
+        <property name="text">
+         <string>                                    CLIENT FORM</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>130</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Licence Plate</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_21">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_21{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_21:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Licence Plate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>190</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>First Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>250</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>310</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Breakdown</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>370</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_22">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>200</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_22{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_22:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter First Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_23">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>260</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_23{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_23:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Last Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_24">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>380</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_24{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_24:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Email</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_8">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>320</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_8 {
+    border: 1px solid #ccc; /* Use the same border color */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    background-color: #f9f9f9; /* Same background color as lineEdit_7 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#comboBox_8::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none; /* No left border */
+}
+
+#comboBox_8::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+}
+
+#comboBox_8 QAbstractItemView {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+    padding: 5px; /* Padding around each item */
+    font-size: 14px; /* Font size for dropdown items */
+    min-width: 120px; /* Minimum width to avoid truncation */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    margin: 0px; /* Consistent margin */
+}
+
+#comboBox_8 QAbstractItemView::item {
+    padding: 3px 15px; /* Adjust item padding for better spacing */
+    text-align: center; /* Center-align text within each item */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+        <item>
+         <property name="text">
+          <string>    Select your Breakdown</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>    Engine Failures</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>    Electrical Breakdowns</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>    Braking Problems</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>    Tire-ralated Breakdowns</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>    Other</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_25">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_25{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit25:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Phone Number</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>130</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Phone Number</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit_3">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>220</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#dateEdit_3 {
+    border: 1px solid #ccc; /* Same border color */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    background-color: #f9f9f9; /* Same background color as comboBox_3 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#dateEdit_3:focus {
+    border-color: #dd914f; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    background-color: #ffffff; /* White background on focus */
+}
+
+#dateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right; /* Position of the drop-down button */
+    width: 20px; /* Width of the drop-down button */
+    border-left: none; /* No left border */
+}
+
+#dateEdit::down-arrow {
+   
+    width: 10px; /* Width of the icon */
+    height: 10px; /* Height of the icon */
+}
+
+#dateEdit QCalendarWidget {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the calendar */
+    selection-background-color: #0078d7; /* Blue background for selected date */
+    selection-color: #ffffff; /* White text for selected date */
+    padding: 5px; /* Padding around the calendar */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    margin: 0px; /* Consistent margin */
+}
+
+/* Customize the items in the calendar */
+#dateEdit QCalendarWidget QAbstractItemView {
+    border: none; /* No border for the items */
+    selection-background-color: #0078d7; /* Selected item background */
+    selection-color: #ffffff; /* Selected item text color */
+}
+
+/* Styling for individual calendar days */
+#dateEdit QCalendarWidget QAbstractItemView::item {
+    padding: 8px; /* Padding for calendar items */
+    text-align: center; /* Center-align the text */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>210</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Date of Hire</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_40">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>290</y>
+          <width>171</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_40{
+margin:0px;
+ border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+#pushButton_40:hover {
+    border-color: #dd914f;
+    background-color: #fff7f2;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="image.qrc">
+          <normaloff>:/image/ressource/upload.png</normaloff>:/image/ressource/upload.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>175</width>
+          <height>175</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>280</y>
+          <width>141</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Upload 
+Client 
+Image</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_41">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_41
+{
+	margin:0px;
+padding: 8px 16px;
+  background-color: #dd914f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#pushButton_41:hover{
+background-color: #c87f42;}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Add</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/stat.png</normaloff>:/image/ressource/stat.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_5">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_5{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_6">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_6{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="equip">
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>261</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox_6{
+background:white;}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_65">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="image.qrc">:/image/ressource/fix-it.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_67">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>190</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_67{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+
+}
+#pushButton_67:hover{
+
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Employees</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des employes.png</normaloff>:/image/ressource/gestion des employes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_68">
+       <property name="geometry">
+        <rect>
+         <x>-60</x>
+         <y>290</y>
+         <width>331</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_68{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_68:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des clients.png</normaloff>:/image/ressource/gestion des clients.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_69">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_69
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+background-color:#F8943F; 
+}
+#pushButton_69:hover{
+background-color: #dd914f;
+}</string>
+       </property>
+       <property name="text">
+        <string>   Equipements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des equipements.png</normaloff>:/image/ressource/gestion des equipements.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_70">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>490</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_70
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_70:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Services </string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des services.png</normaloff>:/image/ressource/gestion des services.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_71">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>590</y>
+         <width>301</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_71
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_71:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Workshops</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des ateliers.png</normaloff>:/image/ressource/gestion des ateliers.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+QTabBar::tab {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-right: 35px;
+	margin-left:60px;
+	border-bottom:none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width:180px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-color: #e0e0e0;
+}
+
+QTabBar::tab:hover {
+    background-color: #dd914f;
+  color: white;
+}
+
+QTabBar {
+    alignment: center;
+}
+QTabBar::tab:selected:hover {
+   background: #ffffff;
+   color: black;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_22">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/list.png</normaloff>:/image/ressource/list.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>List Of Equipments</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_43">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>45</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#lineEdit_43{
+  border: 2px solid #F8943F;
+  border-radius: 15px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string> Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_84">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>50</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="image.qrc">:/image/ressource/rech.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_16">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>141</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+QComboBox::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Purchase Date</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Price</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_86">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>50</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_86{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_86:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>120</y>
+          <width>711</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget_6{
+border: 0.5px solid black;
+}
+</string>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Reference</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Brand</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Price</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Quantity</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Purchase Date</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_87">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>450</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_87
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_87:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Automatic Diagnostics</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_88">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_88
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_88:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Generate PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_89">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>500</y>
+          <width>81</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_89
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_89:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_90">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>500</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_90
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_90:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_91">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_91
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_91:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Create 3D Model</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_23">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">margin:50px</string>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/ajout.png</normaloff>:/image/ressource/ajout.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Add Equipments</string>
+       </attribute>
+       <widget class="QLabel" name="label_85">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>30</y>
+          <width>941</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>19</pointsize>
+          <bold>false</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label_85{
+border:none;
+border-top: 2px solid #dd914f;
+}</string>
+        </property>
+        <property name="text">
+         <string>                                    EQUIPMENT FORM</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_86">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>130</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Reference</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_44">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_44{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_36:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Reference</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_87">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>210</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>First Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_88">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>290</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_89">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>370</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Brand Name</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_45">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>220</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_45{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_45:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter First Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_46">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>380</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_46{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_46:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Brand Name</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_17">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>300</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_17 {
+    border: 1px solid #ccc; /* Use the same border color */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    background-color: #f9f9f9; /* Same background color as lineEdit_7 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#comboBox_17::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none; /* No left border */
+}
+
+#comboBox_17::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+}
+
+#comboBox_17 QAbstractItemView {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+    padding: 5px; /* Padding around each item */
+    font-size: 14px; /* Font size for dropdown items */
+    min-width: 120px; /* Minimum width to avoid truncation */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    margin: 0px; /* Consistent margin */
+}
+
+#comboBox_17 QAbstractItemView::item {
+    padding: 3px 15px; /* Adjust item padding for better spacing */
+    text-align: center; /* Center-align text within each item */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+        <item>
+         <property name="text">
+          <string>          Select your Type</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Electrical</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Hydraulic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Mechanical</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Measuring/Instrumentation</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Pneumatic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>                Other</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_90">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>130</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Price</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>220</y>
+          <width>241</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#dateEdit_7 {
+    border: 1px solid #ccc; /* Same border color */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    background-color: #f9f9f9; /* Same background color as comboBox_3 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#dateEdit_7:focus {
+    border-color: #dd914f; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    background-color: #ffffff; /* White background on focus */
+}
+
+#dateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right; /* Position of the drop-down button */
+    width: 20px; /* Width of the drop-down button */
+    border-left: none; /* No left border */
+}
+
+#dateEdit_5::down-arrow {
+   
+    width: 10px; /* Width of the icon */
+    height: 10px; /* Height of the icon */
+}
+
+#dateEdit_5 QCalendarWidget {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the calendar */
+    selection-background-color: #0078d7; /* Blue background for selected date */
+    selection-color: #ffffff; /* White text for selected date */
+    padding: 5px; /* Padding around the calendar */
+    border-radius: 8px; /* Match border radius with comboBox_3 */
+    margin: 0px; /* Consistent margin */
+}
+
+/* Customize the items in the calendar */
+#dateEdit_5 QCalendarWidget QAbstractItemView {
+    border: none; /* No border for the items */
+    selection-background-color: #0078d7; /* Selected item background */
+    selection-color: #ffffff; /* Selected item text color */
+}
+
+/* Styling for individual calendar days */
+#dateEdit_5 QCalendarWidget QAbstractItemView::item {
+    padding: 8px; /* Padding for calendar items */
+    text-align: center; /* Center-align the text */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_91">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>210</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Purchase Date</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_92">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_92
+{
+	margin:0px;
+padding: 8px 16px;
+  background-color: #dd914f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#pushButton_92:hover{
+background-color: #c87f42;}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Add</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_92">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>280</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Quatity</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>140</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#doubleSpinBox_4{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#doubleSpinBox_4:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_5">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>290</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#spinBox_5{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#spinBox_5:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_24">
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/stat.png</normaloff>:/image/ressource/stat.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_15">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_15{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_16">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_16{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="service">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>261</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox_7{
+background:white;}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_93">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="image.qrc">:/image/ressource/fix-it.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_93">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>190</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_93{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+
+}
+#pushButton_93:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Employees</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des employes.png</normaloff>:/image/ressource/gestion des employes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_94">
+       <property name="geometry">
+        <rect>
+         <x>-60</x>
+         <y>290</y>
+         <width>331</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_94{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_94:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des clients.png</normaloff>:/image/ressource/gestion des clients.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_95">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_95
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_95:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>   Equipements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des equipements.png</normaloff>:/image/ressource/gestion des equipements.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_96">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>490</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_96
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+ background-color:#F8943F;
+}
+#pushButton_96:hover{
+background-color: #dd914f;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Services </string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des services.png</normaloff>:/image/ressource/gestion des services.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_97">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>590</y>
+         <width>301</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_97
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_97:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Workshops</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des ateliers.png</normaloff>:/image/ressource/gestion des ateliers.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+QTabBar::tab {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-right: 35px;
+	margin-left:60px;
+	border-bottom:none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width:180px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-color: #e0e0e0;
+}
+
+QTabBar::tab:hover {
+    background-color: #dd914f;
+  color: white;
+}
+
+QTabBar {
+    alignment: center;
+}
+QTabBar::tab:selected:hover {
+   background: #ffffff;
+   color: black;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_25">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/list.png</normaloff>:/image/ressource/list.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>List Of Services</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_47">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>45</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#lineEdit_47{
+  border: 2px solid #F8943F;
+  border-radius: 15px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string> Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_94">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>50</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="image.qrc">:/image/ressource/rech.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_18">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+QComboBox::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>      Price</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>      Time</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_98">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>50</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_98{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_98:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>120</y>
+          <width>311</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget_9{
+border: 0.5px solid black;
+}
+</string>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Time</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Price</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_99">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_99
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_99:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Send E-Mail</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_100">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_100
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_100:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Generate PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_101">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>500</y>
+          <width>81</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_101
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_101:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_102">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>500</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_102
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_102:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_103">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_103
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_103:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Send E-Mail</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_26">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">margin:50px</string>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/ajout.png</normaloff>:/image/ressource/ajout.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Add Service</string>
+       </attribute>
+       <widget class="QLabel" name="label_95">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>30</y>
+          <width>941</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>19</pointsize>
+          <bold>false</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label_95{
+border:none;
+border-top: 2px solid #dd914f;
+}</string>
+        </property>
+        <property name="text">
+         <string>                                    SERVICE FORM</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_96">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>150</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_97">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>310</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Price</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_19">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>160</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_19 {
+    border: 1px solid #ccc; /* Use the same border color */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    background-color: #f9f9f9; /* Same background color as lineEdit_7 */
+    padding: 0px; /* Adjust padding to match */
+    margin: 0px; /* Consistent margin */
+    font-size: 16px; /* Match font size */
+}
+
+#comboBox_19::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none; /* No left border */
+}
+
+#comboBox_19::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+}
+
+#comboBox_19 QAbstractItemView {
+    border: 1px solid #ccc; /* Use the same border color */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+    padding: 5px; /* Padding around each item */
+    font-size: 14px; /* Font size for dropdown items */
+    min-width: 120px; /* Minimum width to avoid truncation */
+    border-radius: 8px; /* Match border radius with lineEdit_7 */
+    margin: 0px; /* Consistent margin */
+}
+
+#comboBox_19 QAbstractItemView::item {
+    padding: 3px 15px; /* Adjust item padding for better spacing */
+    text-align: center; /* Center-align text within each item */
+    margin: 0px; /* Consistent margin */
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+        <item>
+         <property name="text">
+          <string>          Select Type</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Engine Diagnostics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Electrical System Diagnostic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brake System Diagnostic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tire Inspection</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Painting Job</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_98">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>230</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Time</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_104">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_104
+{
+	margin:0px;
+padding: 8px 16px;
+  background-color: #dd914f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#pushButton_104:hover{
+background-color: #c87f42;}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Add</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_6">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>240</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#spinBox_6{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#spinBox_6:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>320</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#doubleSpinBox_5{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#doubleSpinBox_5:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_27">
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/stat.png</normaloff>:/image/ressource/stat.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_17">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_17{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_18">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_18{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="atelier">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-10</y>
+        <width>261</width>
+        <height>871</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#groupBox_5{
+background:white;}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>181</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="image.qrc">:/image/ressource/fix-it.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_55">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>190</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_55{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+
+}
+#pushButton_55:hover{
+background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Employees</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des employes.png</normaloff>:/image/ressource/gestion des employes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_56">
+       <property name="geometry">
+        <rect>
+         <x>-60</x>
+         <y>290</y>
+         <width>331</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_56{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_56:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des clients.png</normaloff>:/image/ressource/gestion des clients.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_57">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_57
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_57:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>   Equipements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des equipements.png</normaloff>:/image/ressource/gestion des equipements.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_58">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>490</y>
+         <width>291</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_58
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+}
+#pushButton_58:hover{
+ background-color: #e9ecef;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Services </string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des services.png</normaloff>:/image/ressource/gestion des services.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_59">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>590</y>
+         <width>301</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pushButton_59
+{
+  text-decoration: none;
+  border:none;
+  font-size: 20px;
+  color: #555;
+background-color:#F8943F;
+}
+#pushButton_59:hover{
+  background-color: #dd914f;
+}</string>
+       </property>
+       <property name="text">
+        <string>    Workshops</string>
+       </property>
+       <property name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/gestion des ateliers.png</normaloff>:/image/ressource/gestion des ateliers.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>931</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+QTabBar::tab {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    margin-right: 35px;
+	margin-left:60px;
+	border-bottom:none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width:180px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    border-color: #e0e0e0;
+}
+
+QTabBar::tab:hover {
+    background-color: #dd914f;
+  color: white;
+}
+
+QTabBar {
+    alignment: center;
+}
+QTabBar::tab:selected:hover {
+   background: #ffffff;
+   color: black;
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_13">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/list.png</normaloff>:/image/ressource/list.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>List Of Workshop</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_32">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>45</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#lineEdit_32{
+  border: 2px solid #F8943F;
+  border-radius: 15px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string> Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>50</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="image.qrc">:/image/ressource/rech.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_11">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_11 {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+#comboBox_11::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+#comboBox_11::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+#comboBox_11 QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Type Of Service</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_60">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>50</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_60{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_60:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Filter</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>130</y>
+          <width>311</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget_5{
+border: 0.5px solid black;
+}
+</string>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Type Of Service</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="pushButton_61">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_61
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_61:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Chat-Bot</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_62">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_62
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_62:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Generate PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_63">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>500</y>
+          <width>81</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_63
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_63:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Update</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_64">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>500</y>
+          <width>71</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_64
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pushButton_64:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_65">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>450</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_65
+{
+padding: 8px 16px;
+  background-color: #F8943F;
+  color: white;
+  border: none;
+  border-radius:7px;
+}
+#pushButton_65:hover{
+background-color: #dd914f;}</string>
+        </property>
+        <property name="text">
+         <string>Alert</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">margin:50px</string>
+       </property>
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/ajout.png</normaloff>:/image/ressource/ajout.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Add Workshop</string>
+       </attribute>
+       <widget class="QLabel" name="label_59">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>30</y>
+          <width>941</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>19</pointsize>
+          <bold>false</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label_59{
+border:none;
+border-top: 2px solid #dd914f;
+}</string>
+        </property>
+        <property name="text">
+         <string>                                    WORKSHOP FORM</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>130</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_33">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>140</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_33{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_33:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>180</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Address</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_34">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>190</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_34{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_34:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Address</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_62">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>180</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Number of 
+ Services</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_63">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>130</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Capacity</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_66">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_66
+{
+	margin:0px;
+padding: 8px 16px;
+  background-color: #dd914f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#pushButton_66:hover{
+background-color: #c87f42;}</string>
+        </property>
+        <property name="text">
+         <string>Confirm Add</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>240</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Job</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>140</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#spinBox{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#spinBox:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>190</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#spinBox_2{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#spinBox_2:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>260</y>
+          <width>161</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Engine Diagnostics</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>290</y>
+          <width>221</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Electrical System 
+ Diagnostics</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>340</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Break System 
+ Diagnostics</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>400</y>
+          <width>131</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Tire Inspection</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_5">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>440</y>
+          <width>101</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Painting Job</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="icon">
+        <iconset resource="image.qrc">
+         <normaloff>:/image/ressource/stat.png</normaloff>:/image/ressource/stat.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Statistics</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_9">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_9{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_10">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>30</y>
+          <width>361</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#graphicsView_10{border-radius: 13px;background-color:#eae6e6}
+</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1695</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

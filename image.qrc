@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>back.png</file>
+        <file>ressource/ajout.png</file>
+        <file>ressource/icon-english-7-removebg-preview.png</file>
+        <file>ressource/round-french-flag-icon-isolated-on-white-background-the-flag-of-france-in-a-circle-free-vector-removebg-preview.png</file>
+        <file>ressource/2560x1600-white-solid-color-background.jpg</file>
+        <file>ressource/back.png</file>
+        <file>ressource/brightness.png</file>
+        <file>ressource/fix-it.png</file>
+        <file>ressource/gestion des ateliers.png</file>
+        <file>ressource/gestion des clients.png</file>
+        <file>ressource/gestion des equipements.png</file>
+        <file>ressource/gestion des services.png</file>
+        <file>ressource/Mesa de trabajo 1.png</file>
+        <file>ressource/moon.png</file>
+        <file>ressource/Plan de travail 1.png</file>
+        <file>ressource/rech.png</file>
+        <file>ressource/stat.png</file>
+        <file>ressource/upload.png</file>
+        <file>ressource/gestion des employes.png</file>
+        <file>ressource/list.png</file>
+    </qresource>
+</RCC>

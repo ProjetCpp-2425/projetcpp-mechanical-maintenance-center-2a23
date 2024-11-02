@@ -1,0 +1,16 @@
+release/client.o
+release/employe.o
+release/equip.o
+release/form.o
+release/main.o
+release/mainwindow.o
+release/service.o
+release/workshop.o
+release/qrc_image.o
+release/moc_client.o
+release/moc_employe.o
+release/moc_equip.o
+release/moc_form.o
+release/moc_mainwindow.o
+release/moc_service.o
+release/moc_workshop.o
