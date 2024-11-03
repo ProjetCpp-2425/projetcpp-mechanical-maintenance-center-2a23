@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="login">
      <widget class="QComboBox" name="comboBox">
@@ -556,7 +556,7 @@ QTabBar::tab:selected:hover {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -669,17 +669,17 @@ QTabBar::tab:selected:hover {
         </property>
         <item>
          <property name="text">
-          <string>      Salary</string>
+          <string>Salary</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>      Rate</string>
+          <string>Rate</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>      Seniority</string>
+          <string>Seniority</string>
          </property>
         </item>
        </widget>
@@ -706,92 +706,6 @@ background-color: #dd914f;}</string>
         <property name="text">
          <string>Filter</string>
         </property>
-       </widget>
-       <widget class="QTableWidget" name="tableWidget">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>120</y>
-          <width>711</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#tableWidget{
-border: 0.5px solid black;
-}
-</string>
-        </property>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <column>
-         <property name="text">
-          <string>Employee ID</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>First Name</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Last Name</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Phone Number</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Email</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Address</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Gender</string>
-         </property>
-        </column>
        </widget>
        <widget class="QPushButton" name="pushButton_10">
         <property name="geometry">
@@ -891,6 +805,19 @@ background-color: #dd914f;}</string>
         </property>
         <property name="text">
          <string>Delete</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_1">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>150</y>
+          <width>821</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-left: 0.5px solid black;</string>
         </property>
        </widget>
       </widget>
@@ -1101,31 +1028,6 @@ border-color: #dd914f;
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_19">
-        <property name="geometry">
-         <rect>
-          <x>90</x>
-          <y>380</y>
-          <width>81</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Verdana</family>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">margin:0px;</string>
-        </property>
-        <property name="text">
-         <string>Email</string>
-        </property>
-        <property name="scaledContents">
-         <bool>false</bool>
-        </property>
-       </widget>
        <widget class="QLineEdit" name="lineEdit_9">
         <property name="geometry">
          <rect>
@@ -1249,47 +1151,6 @@ border-color: #dd914f;
          <string>  Enter Last Name</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_12">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>390</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="acceptDrops">
-         <bool>true</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-#lineEdit_12{
-	border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-	margin:0px;
-	padding:0px;margin:0px;
-}
-#lineEdit_12:focus{
-border-color: #dd914f;
-    outline: none;
-    background-color: #fff;
-}</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-        <property name="placeholderText">
-         <string>  Enter Email</string>
-        </property>
-       </widget>
        <widget class="QComboBox" name="comboBox_3">
         <property name="geometry">
          <rect>
@@ -1351,17 +1212,17 @@ border-color: #dd914f;
         </item>
         <item>
          <property name="text">
-          <string>                Male</string>
+          <string>Male</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>                Female</string>
+          <string>Female</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>                Other</string>
+          <string>Other</string>
          </property>
         </item>
        </widget>
@@ -1514,27 +1375,27 @@ border-color: #dd914f;
         </item>
         <item>
          <property name="text">
-          <string>                Mechanic</string>
+          <string>Mechanic</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>                Electrician</string>
+          <string>Electrician</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>            Worshop Manager</string>
+          <string>Worshop Manager</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>                Car Painter</string>
+          <string>Car Painter</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>                HR Manager</string>
+          <string>HR Manager</string>
          </property>
         </item>
        </widget>
@@ -1692,7 +1553,7 @@ Image</string>
         <property name="geometry">
          <rect>
           <x>370</x>
-          <y>480</y>
+          <y>460</y>
           <width>181</width>
           <height>51</height>
          </rect>
@@ -2175,92 +2036,11 @@ background-color: #dd914f;}</string>
          <string>Filter</string>
         </property>
        </widget>
-       <widget class="QTableWidget" name="tableWidget_3">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>120</y>
-          <width>641</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#tableWidget_3{
-border: 0.5px solid black;
-}
-</string>
-        </property>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <column>
-         <property name="text">
-          <string>Licence Plate</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>First Name</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Last Name</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Phone Number</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Email</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Breakdown</string>
-         </property>
-        </column>
-       </widget>
        <widget class="QPushButton" name="pushButton_35">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>450</y>
+          <x>390</x>
+          <y>430</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2284,8 +2064,8 @@ background-color: #dd914f;}</string>
        <widget class="QPushButton" name="pushButton_36">
         <property name="geometry">
          <rect>
-          <x>270</x>
-          <y>450</y>
+          <x>210</x>
+          <y>430</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2309,8 +2089,8 @@ background-color: #dd914f;}</string>
        <widget class="QPushButton" name="pushButton_37">
         <property name="geometry">
          <rect>
-          <x>690</x>
-          <y>500</y>
+          <x>650</x>
+          <y>490</y>
           <width>81</width>
           <height>29</height>
          </rect>
@@ -2334,8 +2114,8 @@ background-color: #dd914f;}</string>
        <widget class="QPushButton" name="pushButton_38">
         <property name="geometry">
          <rect>
-          <x>790</x>
-          <y>500</y>
+          <x>750</x>
+          <y>490</y>
           <width>71</width>
           <height>29</height>
          </rect>
@@ -2359,8 +2139,8 @@ background-color: #dd914f;}</string>
        <widget class="QPushButton" name="pushButton_39">
         <property name="geometry">
          <rect>
-          <x>620</x>
-          <y>450</y>
+          <x>560</x>
+          <y>430</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2379,6 +2159,16 @@ background-color: #dd914f;}</string>
         </property>
         <property name="text">
          <string>Scan License Plate</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_4">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>150</y>
+          <width>711</width>
+          <height>241</height>
+         </rect>
         </property>
        </widget>
       </widget>
@@ -2583,7 +2373,7 @@ border-color: #dd914f;
          <string notr="true">margin:0px;</string>
         </property>
         <property name="text">
-         <string>Email</string>
+         <string>Address</string>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
@@ -2709,7 +2499,7 @@ border-color: #dd914f;
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
         </property>
         <property name="placeholderText">
-         <string>  Enter Email</string>
+         <string>  Enter Adress</string>
         </property>
        </widget>
        <widget class="QComboBox" name="comboBox_8">
@@ -2946,7 +2736,7 @@ border-color: #dd914f;
          <string notr="true">margin:0px;</string>
         </property>
         <property name="text">
-         <string>Date of Hire</string>
+         <string>Date</string>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
@@ -3349,7 +3139,7 @@ QTabBar::tab:selected:hover {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -3495,92 +3285,6 @@ background-color: #dd914f;}</string>
          <string>Filter</string>
         </property>
        </widget>
-       <widget class="QTableWidget" name="tableWidget_8">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>120</y>
-          <width>711</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#tableWidget_6{
-border: 0.5px solid black;
-}
-</string>
-        </property>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <column>
-         <property name="text">
-          <string>Reference</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Type</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Name</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Brand</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Price</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Quantity</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Purchase Date</string>
-         </property>
-        </column>
-       </widget>
        <widget class="QPushButton" name="pushButton_87">
         <property name="geometry">
          <rect>
@@ -3704,6 +3408,16 @@ background-color: #dd914f;}</string>
         </property>
         <property name="text">
          <string>Create 3D Model</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>120</y>
+          <width>711</width>
+          <height>241</height>
+         </rect>
         </property>
        </widget>
       </widget>
@@ -4733,72 +4447,6 @@ background-color: #dd914f;}</string>
          <string>Filter</string>
         </property>
        </widget>
-       <widget class="QTableWidget" name="tableWidget_9">
-        <property name="geometry">
-         <rect>
-          <x>330</x>
-          <y>120</y>
-          <width>311</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#tableWidget_9{
-border: 0.5px solid black;
-}
-</string>
-        </property>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <column>
-         <property name="text">
-          <string>Type</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Time</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Price</string>
-         </property>
-        </column>
-       </widget>
        <widget class="QPushButton" name="pushButton_99">
         <property name="geometry">
          <rect>
@@ -4922,6 +4570,16 @@ background-color: #dd914f;}</string>
         </property>
         <property name="text">
          <string>Send E-Mail</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>120</y>
+          <width>311</width>
+          <height>241</height>
+         </rect>
         </property>
        </widget>
       </widget>
@@ -5664,72 +5322,6 @@ background-color: #dd914f;}</string>
          <string>Filter</string>
         </property>
        </widget>
-       <widget class="QTableWidget" name="tableWidget_5">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>130</y>
-          <width>311</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#tableWidget_5{
-border: 0.5px solid black;
-}
-</string>
-        </property>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <row>
-         <property name="text">
-          <string/>
-         </property>
-        </row>
-        <column>
-         <property name="text">
-          <string>ID</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Adresse</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Type Of Service</string>
-         </property>
-        </column>
-       </widget>
        <widget class="QPushButton" name="pushButton_61">
         <property name="geometry">
          <rect>
@@ -5853,6 +5445,16 @@ background-color: #dd914f;}</string>
         </property>
         <property name="text">
          <string>Alert</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_3">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>130</y>
+          <width>311</width>
+          <height>241</height>
+         </rect>
         </property>
        </widget>
       </widget>
