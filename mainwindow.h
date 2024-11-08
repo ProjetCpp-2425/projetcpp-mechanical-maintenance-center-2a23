@@ -1,7 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-
+#include "client.h"
+#include "dialog.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -18,9 +19,18 @@ public:
 
 private slots:
     void selectFile();
+    void onTableCellClicked(const QModelIndex &index);
+    void on_pushButton_41_clicked();
+    void onExportButtonClicked2();
 
+
+
+
+    void on_pushButton_34_clicked();
 
 private:
     Ui::MainWindow *ui;
+    QString selectedFilePath;
+    Client clt;
 };
 #endif // MAINWINDOW_H

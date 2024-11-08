@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="login">
      <widget class="QComboBox" name="comboBox">
@@ -550,10 +550,10 @@ QTabBar::tab:selected:hover {
 }</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -565,7 +565,7 @@ QTabBar::tab:selected:hover {
        </size>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -669,17 +669,17 @@ QTabBar::tab:selected:hover {
         </property>
         <item>
          <property name="text">
-          <string>Salary</string>
+          <string>      Salary</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Rate</string>
+          <string>      Rate</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Seniority</string>
+          <string>      Seniority</string>
          </property>
         </item>
        </widget>
@@ -810,14 +810,11 @@ background-color: #dd914f;}</string>
        <widget class="QTableView" name="tableView_1">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>70</x>
           <y>150</y>
-          <width>821</width>
+          <width>811</width>
           <height>241</height>
          </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border-left: 0.5px solid black;</string>
         </property>
        </widget>
       </widget>
@@ -922,7 +919,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter CIN</string>
@@ -1028,6 +1025,31 @@ border-color: #dd914f;
          <bool>false</bool>
         </property>
        </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>380</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">margin:0px;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
        <widget class="QLineEdit" name="lineEdit_9">
         <property name="geometry">
          <rect>
@@ -1063,7 +1085,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter First Name</string>
@@ -1104,7 +1126,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Age</string>
@@ -1145,10 +1167,51 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Last Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_12">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>390</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+#lineEdit_12{
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+	margin:0px;
+	padding:0px;margin:0px;
+}
+#lineEdit_12:focus{
+border-color: #dd914f;
+    outline: none;
+    background-color: #fff;
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>  Enter Email</string>
         </property>
        </widget>
        <widget class="QComboBox" name="comboBox_3">
@@ -1212,17 +1275,17 @@ border-color: #dd914f;
         </item>
         <item>
          <property name="text">
-          <string>Male</string>
+          <string>                Male</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Female</string>
+          <string>                Female</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Other</string>
+          <string>                Other</string>
          </property>
         </item>
        </widget>
@@ -1286,7 +1349,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Phone Number</string>
@@ -1375,27 +1438,27 @@ border-color: #dd914f;
         </item>
         <item>
          <property name="text">
-          <string>Mechanic</string>
+          <string>                Mechanic</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Electrician</string>
+          <string>                Electrician</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Worshop Manager</string>
+          <string>            Worshop Manager</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Car Painter</string>
+          <string>                Car Painter</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>HR Manager</string>
+          <string>                HR Manager</string>
          </property>
         </item>
        </widget>
@@ -1553,7 +1616,7 @@ Image</string>
         <property name="geometry">
          <rect>
           <x>370</x>
-          <y>460</y>
+          <y>480</y>
           <width>181</width>
           <height>51</height>
          </rect>
@@ -1879,13 +1942,13 @@ QTabBar::tab:selected:hover {
 }</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
@@ -1894,7 +1957,7 @@ QTabBar::tab:selected:hover {
        </size>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -2040,7 +2103,7 @@ background-color: #dd914f;}</string>
         <property name="geometry">
          <rect>
           <x>390</x>
-          <y>430</y>
+          <y>460</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2065,7 +2128,7 @@ background-color: #dd914f;}</string>
         <property name="geometry">
          <rect>
           <x>210</x>
-          <y>430</y>
+          <y>460</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2086,61 +2149,11 @@ background-color: #dd914f;}</string>
          <string>Generate PDF</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_37">
-        <property name="geometry">
-         <rect>
-          <x>650</x>
-          <y>490</y>
-          <width>81</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_37
-{
-padding: 8px 16px;
-  background-color: #F8943F;
-  color: white;
-  border: none;
-  border-radius: 7px;
-}
-#pushButton_37:hover{
-background-color: #dd914f;}</string>
-        </property>
-        <property name="text">
-         <string>Update</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_38">
-        <property name="geometry">
-         <rect>
-          <x>750</x>
-          <y>490</y>
-          <width>71</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_38
-{
-padding: 8px 16px;
-  background-color: #F8943F;
-  color: white;
-  border: none;
-  border-radius: 7px;
-}
-#pushButton_38:hover{
-background-color: #dd914f;}</string>
-        </property>
-        <property name="text">
-         <string>Delete</string>
-        </property>
-       </widget>
        <widget class="QPushButton" name="pushButton_39">
         <property name="geometry">
          <rect>
           <x>560</x>
-          <y>430</y>
+          <y>460</y>
           <width>131</width>
           <height>31</height>
          </rect>
@@ -2161,7 +2174,7 @@ background-color: #dd914f;}</string>
          <string>Scan License Plate</string>
         </property>
        </widget>
-       <widget class="QTableView" name="tableView_4">
+       <widget class="QTableView" name="tableView">
         <property name="geometry">
          <rect>
           <x>110</x>
@@ -2273,7 +2286,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Licence Plate</string>
@@ -2414,7 +2427,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter First Name</string>
@@ -2455,7 +2468,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Last Name</string>
@@ -2496,10 +2509,10 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
-         <string>  Enter Adress</string>
+         <string>  Enter Address</string>
         </property>
        </widget>
        <widget class="QComboBox" name="comboBox_8">
@@ -2558,32 +2571,32 @@ border-color: #dd914f;
         </property>
         <item>
          <property name="text">
-          <string>    Select your Breakdown</string>
+          <string>Select your Breakdown</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>    Engine Failures</string>
+          <string>Engine Failures</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>    Electrical Breakdowns</string>
+          <string>Electrical Breakdowns</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>    Braking Problems</string>
+          <string>Braking Problems</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>    Tire-ralated Breakdowns</string>
+          <string>Tire-ralated Breakdowns</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>    Other</string>
+          <string>Other</string>
          </property>
         </item>
        </widget>
@@ -2622,7 +2635,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Phone Number</string>
@@ -2736,7 +2749,7 @@ border-color: #dd914f;
          <string notr="true">margin:0px;</string>
         </property>
         <property name="text">
-         <string>Date</string>
+         <string>Date </string>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
@@ -3133,10 +3146,10 @@ QTabBar::tab:selected:hover {
 }</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -3148,7 +3161,7 @@ QTabBar::tab:selected:hover {
        </size>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -3413,10 +3426,10 @@ background-color: #dd914f;}</string>
        <widget class="QTableView" name="tableView_2">
         <property name="geometry">
          <rect>
-          <x>110</x>
-          <y>120</y>
-          <width>711</width>
-          <height>241</height>
+          <x>210</x>
+          <y>140</y>
+          <width>561</width>
+          <height>271</height>
          </rect>
         </property>
        </widget>
@@ -3522,7 +3535,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Reference</string>
@@ -3638,7 +3651,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter First Name</string>
@@ -3679,7 +3692,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Brand Name</string>
@@ -4295,10 +4308,10 @@ QTabBar::tab:selected:hover {
 }</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -4310,7 +4323,7 @@ QTabBar::tab:selected:hover {
        </size>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -4572,13 +4585,13 @@ background-color: #dd914f;}</string>
          <string>Send E-Mail</string>
         </property>
        </widget>
-       <widget class="QTableView" name="tableView">
+       <widget class="QTableView" name="tableView_4">
         <property name="geometry">
          <rect>
-          <x>330</x>
-          <y>120</y>
-          <width>311</width>
-          <height>241</height>
+          <x>190</x>
+          <y>140</y>
+          <width>641</width>
+          <height>281</height>
          </rect>
         </property>
        </widget>
@@ -5165,10 +5178,10 @@ QTabBar::tab:selected:hover {
 }</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -5180,7 +5193,7 @@ QTabBar::tab:selected:hover {
        </size>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -5450,10 +5463,10 @@ background-color: #dd914f;}</string>
        <widget class="QTableView" name="tableView_3">
         <property name="geometry">
          <rect>
-          <x>290</x>
-          <y>130</y>
-          <width>311</width>
-          <height>241</height>
+          <x>250</x>
+          <y>150</y>
+          <width>561</width>
+          <height>281</height>
          </rect>
         </property>
        </widget>
@@ -5559,7 +5572,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter ID</string>
@@ -5625,7 +5638,7 @@ border-color: #dd914f;
 }</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
         </property>
         <property name="placeholderText">
          <string>  Enter Address</string>
@@ -5915,7 +5928,7 @@ border-color: #dd914f;
      <x>0</x>
      <y>0</y>
      <width>1695</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
