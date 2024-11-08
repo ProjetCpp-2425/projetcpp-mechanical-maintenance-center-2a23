@@ -10,14 +10,19 @@ CONFIG += c++17
 
 SOURCES += \
     connection.cpp \
+    dialog.cpp \
+    employe.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     connection.h \
+    dialog.h \
+    employe.h \
     mainwindow.h
 
 FORMS += \
+    dialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.

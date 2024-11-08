@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="login">
      <widget class="QComboBox" name="comboBox">
@@ -625,64 +625,6 @@ QTabBar::tab:selected:hover {
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox_2">
-        <property name="geometry">
-         <rect>
-          <x>570</x>
-          <y>48</y>
-          <width>111</width>
-          <height>35</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#comboBox_2 {
-    background-color: white; 
-    border: 1px solid #cccccc; 
-    border-radius: 5px; 
-    padding: 5px 10px; 
-    font: 14px &quot;Arial&quot;; 
-    color: #333333;
-}
-
-#comboBox_2::drop-down {
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-    width: 20px;
-    border-left: 1px solid #cccccc; /* Divider between text and arrow */
-	border-left:none;
-}
-
-#comboBox_2::down-arrow {
-    image: url(../../ressource/icon.png); /* Custom arrow icon */
-    width: 10px;
-    height: 10px;
-	
-}
-
-#comboBox_2 QAbstractItemView {
-    border: 1px solid #cccccc; /* Border for dropdown */
-    background-color: #ffffff; /* White background for the list */
-    selection-background-color: #0078d7; /* Blue background for selected item */
-    selection-color: #ffffff; /* White text for selected item */
-	
-}</string>
-        </property>
-        <item>
-         <property name="text">
-          <string>Salary</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Rate</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Seniority</string>
-         </property>
-        </item>
-       </widget>
        <widget class="QPushButton" name="pushButton_9">
         <property name="geometry">
          <rect>
@@ -757,56 +699,6 @@ background-color: #dd914f;}</string>
          <string>Generate PDF</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_12">
-        <property name="geometry">
-         <rect>
-          <x>690</x>
-          <y>500</y>
-          <width>81</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_12
-{
-padding: 8px 16px;
-  background-color: #F8943F;
-  color: white;
-  border: none;
-  border-radius: 7px;
-}
-#pushButton_12:hover{
-background-color: #dd914f;}</string>
-        </property>
-        <property name="text">
-         <string>Update</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_13">
-        <property name="geometry">
-         <rect>
-          <x>790</x>
-          <y>500</y>
-          <width>71</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_13
-{
-padding: 8px 16px;
-  background-color: #F8943F;
-  color: white;
-  border: none;
-  border-radius: 7px;
-}
-#pushButton_13:hover{
-background-color: #dd914f;}</string>
-        </property>
-        <property name="text">
-         <string>Delete</string>
-        </property>
-       </widget>
        <widget class="QTableView" name="tableView_1">
         <property name="geometry">
          <rect>
@@ -819,6 +711,64 @@ background-color: #dd914f;}</string>
         <property name="styleSheet">
          <string notr="true">border-left: 0.5px solid black;</string>
         </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>48</y>
+          <width>111</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#comboBox_2 {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font: 14px &quot;Arial&quot;; 
+    color: #333333;
+}
+
+#comboBox_2::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #cccccc; /* Divider between text and arrow */
+	border-left:none;
+}
+
+#comboBox_2::down-arrow {
+    image: url(../../ressource/icon.png); /* Custom arrow icon */
+    width: 10px;
+    height: 10px;
+	
+}
+
+#comboBox_2 QAbstractItemView {
+    border: 1px solid #cccccc; /* Border for dropdown */
+    background-color: #ffffff; /* White background for the list */
+    selection-background-color: #0078d7; /* Blue background for selected item */
+    selection-color: #ffffff; /* White text for selected item */
+	
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Salary</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Seniority</string>
+         </property>
+        </item>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_2">
@@ -1207,7 +1157,7 @@ border-color: #dd914f;
         </property>
         <item>
          <property name="text">
-          <string>          Select Gender</string>
+          <string>Select Gender</string>
          </property>
         </item>
         <item>
@@ -1370,7 +1320,7 @@ border-color: #dd914f;
         </property>
         <item>
          <property name="text">
-          <string>             Select job</string>
+          <string>Select job</string>
          </property>
         </item>
         <item>
@@ -1402,10 +1352,10 @@ border-color: #dd914f;
        <widget class="QDateEdit" name="dateEdit">
         <property name="geometry">
          <rect>
-          <x>670</x>
+          <x>660</x>
           <y>240</y>
-          <width>241</width>
-          <height>31</height>
+          <width>251</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1885,7 +1835,7 @@ QTabBar::tab:selected:hover {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="iconSize">
        <size>
@@ -4301,7 +4251,7 @@ QTabBar::tab:selected:hover {
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="iconSize">
        <size>
