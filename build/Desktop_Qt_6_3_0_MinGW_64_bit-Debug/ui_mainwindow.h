@@ -75,9 +75,11 @@ public:
     QLabel *label_16;
     QLabel *label_17;
     QLabel *label_18;
+    QLabel *label_19;
     QLineEdit *lineEdit_9;
     QLineEdit *lineEdit_10;
     QLineEdit *lineEdit_11;
+    QLineEdit *lineEdit_12;
     QComboBox *comboBox_3;
     QLabel *label_20;
     QLineEdit *lineEdit_13;
@@ -107,10 +109,8 @@ public:
     QPushButton *pushButton_34;
     QPushButton *pushButton_35;
     QPushButton *pushButton_36;
-    QPushButton *pushButton_37;
-    QPushButton *pushButton_38;
     QPushButton *pushButton_39;
-    QTableView *tableView_4;
+    QTableView *tableView;
     QWidget *tab_8;
     QLabel *label_37;
     QLabel *label_38;
@@ -192,7 +192,7 @@ public:
     QPushButton *pushButton_101;
     QPushButton *pushButton_102;
     QPushButton *pushButton_103;
-    QTableView *tableView;
+    QTableView *tableView_4;
     QWidget *tab_26;
     QLabel *label_95;
     QLabel *label_96;
@@ -527,10 +527,10 @@ public:
 "   background: #ffffff;\n"
 "   color: black;\n"
 "}"));
-        tabWidget->setTabPosition(QTabWidget::North);
-        tabWidget->setTabShape(QTabWidget::Rounded);
+        tabWidget->setTabPosition(QTabWidget::TabPosition::North);
+        tabWidget->setTabShape(QTabWidget::TabShape::Rounded);
         tabWidget->setIconSize(QSize(30, 30));
-        tabWidget->setElideMode(Qt::ElideNone);
+        tabWidget->setElideMode(Qt::TextElideMode::ElideNone);
         tabWidget->setDocumentMode(false);
         tabWidget->setTabsClosable(false);
         tabWidget->setMovable(false);
@@ -652,8 +652,7 @@ public:
 "background-color: #dd914f;}"));
         tableView_1 = new QTableView(tab);
         tableView_1->setObjectName(QString::fromUtf8("tableView_1"));
-        tableView_1->setGeometry(QRect(60, 150, 821, 241));
-        tableView_1->setStyleSheet(QString::fromUtf8("border-left: 0.5px solid black;"));
+        tableView_1->setGeometry(QRect(70, 150, 811, 241));
         QIcon icon7;
         icon7.addFile(QString::fromUtf8(":/image/ressource/list.png"), QSize(), QIcon::Normal, QIcon::Off);
         tabWidget->addTab(tab, icon7, QString());
@@ -706,7 +705,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_8->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_8->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_15 = new QLabel(tab_2);
         label_15->setObjectName(QString::fromUtf8("label_15"));
         label_15->setGeometry(QRect(90, 180, 121, 51));
@@ -731,6 +730,12 @@ public:
         label_18->setFont(font3);
         label_18->setStyleSheet(QString::fromUtf8("margin:0px;"));
         label_18->setScaledContents(false);
+        label_19 = new QLabel(tab_2);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setGeometry(QRect(90, 380, 81, 51));
+        label_19->setFont(font3);
+        label_19->setStyleSheet(QString::fromUtf8("margin:0px;"));
+        label_19->setScaledContents(false);
         lineEdit_9 = new QLineEdit(tab_2);
         lineEdit_9->setObjectName(QString::fromUtf8("lineEdit_9"));
         lineEdit_9->setGeometry(QRect(220, 190, 251, 41));
@@ -751,7 +756,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_9->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_9->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         lineEdit_10 = new QLineEdit(tab_2);
         lineEdit_10->setObjectName(QString::fromUtf8("lineEdit_10"));
         lineEdit_10->setGeometry(QRect(220, 340, 251, 41));
@@ -772,7 +777,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_10->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_10->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         lineEdit_11 = new QLineEdit(tab_2);
         lineEdit_11->setObjectName(QString::fromUtf8("lineEdit_11"));
         lineEdit_11->setGeometry(QRect(220, 240, 251, 41));
@@ -793,7 +798,28 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_11->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_11->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
+        lineEdit_12 = new QLineEdit(tab_2);
+        lineEdit_12->setObjectName(QString::fromUtf8("lineEdit_12"));
+        lineEdit_12->setGeometry(QRect(220, 390, 251, 41));
+        sizePolicy.setHeightForWidth(lineEdit_12->sizePolicy().hasHeightForWidth());
+        lineEdit_12->setSizePolicy(sizePolicy);
+        lineEdit_12->setAcceptDrops(true);
+        lineEdit_12->setStyleSheet(QString::fromUtf8("\n"
+"#lineEdit_12{\n"
+"	border: 1px solid #ccc;\n"
+"    border-radius: 8px;\n"
+"    font-size: 16px;\n"
+"    background-color: #f9f9f9;\n"
+"	margin:0px;\n"
+"	padding:0px;margin:0px;\n"
+"}\n"
+"#lineEdit_12:focus{\n"
+"border-color: #dd914f;\n"
+"    outline: none;\n"
+"    background-color: #fff;\n"
+"}"));
+        lineEdit_12->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         comboBox_3 = new QComboBox(tab_2);
         comboBox_3->addItem(QString());
         comboBox_3->addItem(QString());
@@ -868,7 +894,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_13->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_13->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_21 = new QLabel(tab_2);
         label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setGeometry(QRect(500, 130, 151, 51));
@@ -1011,7 +1037,7 @@ public:
         label_23->setScaledContents(false);
         pushButton_15 = new QPushButton(tab_2);
         pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
-        pushButton_15->setGeometry(QRect(370, 460, 181, 51));
+        pushButton_15->setGeometry(QRect(370, 480, 181, 51));
         pushButton_15->setStyleSheet(QString::fromUtf8("#pushButton_15\n"
 "{\n"
 "	margin:0px;\n"
@@ -1170,10 +1196,10 @@ public:
 "   background: #ffffff;\n"
 "   color: black;\n"
 "}"));
-        tabWidget_2->setTabPosition(QTabWidget::North);
-        tabWidget_2->setTabShape(QTabWidget::Rounded);
+        tabWidget_2->setTabPosition(QTabWidget::TabPosition::North);
+        tabWidget_2->setTabShape(QTabWidget::TabShape::Rounded);
         tabWidget_2->setIconSize(QSize(30, 30));
-        tabWidget_2->setElideMode(Qt::ElideNone);
+        tabWidget_2->setElideMode(Qt::TextElideMode::ElideNone);
         tabWidget_2->setDocumentMode(false);
         tabWidget_2->setTabsClosable(false);
         tabWidget_2->setMovable(false);
@@ -1243,7 +1269,7 @@ public:
 "background-color: #dd914f;}"));
         pushButton_35 = new QPushButton(tab_7);
         pushButton_35->setObjectName(QString::fromUtf8("pushButton_35"));
-        pushButton_35->setGeometry(QRect(390, 430, 131, 31));
+        pushButton_35->setGeometry(QRect(390, 460, 131, 31));
         pushButton_35->setStyleSheet(QString::fromUtf8("#pushButton_35\n"
 "{\n"
 "padding: 8px 16px;\n"
@@ -1256,7 +1282,7 @@ public:
 "background-color: #dd914f;}"));
         pushButton_36 = new QPushButton(tab_7);
         pushButton_36->setObjectName(QString::fromUtf8("pushButton_36"));
-        pushButton_36->setGeometry(QRect(210, 430, 131, 31));
+        pushButton_36->setGeometry(QRect(210, 460, 131, 31));
         pushButton_36->setStyleSheet(QString::fromUtf8("#pushButton_36\n"
 "{\n"
 "padding: 8px 16px;\n"
@@ -1267,35 +1293,9 @@ public:
 "}\n"
 "#pushButton_36:hover{\n"
 "background-color: #dd914f;}"));
-        pushButton_37 = new QPushButton(tab_7);
-        pushButton_37->setObjectName(QString::fromUtf8("pushButton_37"));
-        pushButton_37->setGeometry(QRect(650, 490, 81, 29));
-        pushButton_37->setStyleSheet(QString::fromUtf8("#pushButton_37\n"
-"{\n"
-"padding: 8px 16px;\n"
-"  background-color: #F8943F;\n"
-"  color: white;\n"
-"  border: none;\n"
-"  border-radius: 7px;\n"
-"}\n"
-"#pushButton_37:hover{\n"
-"background-color: #dd914f;}"));
-        pushButton_38 = new QPushButton(tab_7);
-        pushButton_38->setObjectName(QString::fromUtf8("pushButton_38"));
-        pushButton_38->setGeometry(QRect(750, 490, 71, 29));
-        pushButton_38->setStyleSheet(QString::fromUtf8("#pushButton_38\n"
-"{\n"
-"padding: 8px 16px;\n"
-"  background-color: #F8943F;\n"
-"  color: white;\n"
-"  border: none;\n"
-"  border-radius: 7px;\n"
-"}\n"
-"#pushButton_38:hover{\n"
-"background-color: #dd914f;}"));
         pushButton_39 = new QPushButton(tab_7);
         pushButton_39->setObjectName(QString::fromUtf8("pushButton_39"));
-        pushButton_39->setGeometry(QRect(560, 430, 131, 31));
+        pushButton_39->setGeometry(QRect(560, 460, 131, 31));
         pushButton_39->setStyleSheet(QString::fromUtf8("#pushButton_39\n"
 "{\n"
 "padding: 8px 16px;\n"
@@ -1306,9 +1306,9 @@ public:
 "}\n"
 "#pushButton_39:hover{\n"
 "background-color: #dd914f;}"));
-        tableView_4 = new QTableView(tab_7);
-        tableView_4->setObjectName(QString::fromUtf8("tableView_4"));
-        tableView_4->setGeometry(QRect(110, 150, 711, 241));
+        tableView = new QTableView(tab_7);
+        tableView->setObjectName(QString::fromUtf8("tableView"));
+        tableView->setGeometry(QRect(110, 150, 711, 241));
         tabWidget_2->addTab(tab_7, icon7, QString());
         tab_8 = new QWidget();
         tab_8->setObjectName(QString::fromUtf8("tab_8"));
@@ -1348,7 +1348,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_21->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_21->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_39 = new QLabel(tab_8);
         label_39->setObjectName(QString::fromUtf8("label_39"));
         label_39->setGeometry(QRect(90, 190, 121, 51));
@@ -1393,7 +1393,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_22->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_22->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         lineEdit_23 = new QLineEdit(tab_8);
         lineEdit_23->setObjectName(QString::fromUtf8("lineEdit_23"));
         lineEdit_23->setGeometry(QRect(230, 260, 251, 41));
@@ -1414,7 +1414,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_23->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_23->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         lineEdit_24 = new QLineEdit(tab_8);
         lineEdit_24->setObjectName(QString::fromUtf8("lineEdit_24"));
         lineEdit_24->setGeometry(QRect(230, 380, 251, 41));
@@ -1435,7 +1435,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_24->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_24->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         comboBox_8 = new QComboBox(tab_8);
         comboBox_8->addItem(QString());
         comboBox_8->addItem(QString());
@@ -1506,7 +1506,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_25->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_25->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_43 = new QLabel(tab_8);
         label_43->setObjectName(QString::fromUtf8("label_43"));
         label_43->setGeometry(QRect(500, 130, 151, 51));
@@ -1753,10 +1753,10 @@ public:
 "   background: #ffffff;\n"
 "   color: black;\n"
 "}"));
-        tabWidget_4->setTabPosition(QTabWidget::North);
-        tabWidget_4->setTabShape(QTabWidget::Rounded);
+        tabWidget_4->setTabPosition(QTabWidget::TabPosition::North);
+        tabWidget_4->setTabShape(QTabWidget::TabShape::Rounded);
         tabWidget_4->setIconSize(QSize(30, 30));
-        tabWidget_4->setElideMode(Qt::ElideNone);
+        tabWidget_4->setElideMode(Qt::TextElideMode::ElideNone);
         tabWidget_4->setDocumentMode(false);
         tabWidget_4->setTabsClosable(false);
         tabWidget_4->setMovable(false);
@@ -1890,7 +1890,7 @@ public:
 "background-color: #dd914f;}"));
         tableView_2 = new QTableView(tab_22);
         tableView_2->setObjectName(QString::fromUtf8("tableView_2"));
-        tableView_2->setGeometry(QRect(110, 120, 711, 241));
+        tableView_2->setGeometry(QRect(210, 140, 561, 271));
         tabWidget_4->addTab(tab_22, icon7, QString());
         tab_23 = new QWidget();
         tab_23->setObjectName(QString::fromUtf8("tab_23"));
@@ -1930,7 +1930,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_44->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_44->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_87 = new QLabel(tab_23);
         label_87->setObjectName(QString::fromUtf8("label_87"));
         label_87->setGeometry(QRect(90, 210, 121, 51));
@@ -1969,7 +1969,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_45->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_45->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         lineEdit_46 = new QLineEdit(tab_23);
         lineEdit_46->setObjectName(QString::fromUtf8("lineEdit_46"));
         lineEdit_46->setGeometry(QRect(220, 380, 251, 41));
@@ -1990,7 +1990,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_46->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_46->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         comboBox_17 = new QComboBox(tab_23);
         comboBox_17->addItem(QString());
         comboBox_17->addItem(QString());
@@ -2307,10 +2307,10 @@ public:
 "   background: #ffffff;\n"
 "   color: black;\n"
 "}"));
-        tabWidget_5->setTabPosition(QTabWidget::North);
-        tabWidget_5->setTabShape(QTabWidget::Rounded);
+        tabWidget_5->setTabPosition(QTabWidget::TabPosition::North);
+        tabWidget_5->setTabShape(QTabWidget::TabShape::Rounded);
         tabWidget_5->setIconSize(QSize(30, 30));
-        tabWidget_5->setElideMode(Qt::ElideNone);
+        tabWidget_5->setElideMode(Qt::TextElideMode::ElideNone);
         tabWidget_5->setDocumentMode(false);
         tabWidget_5->setTabsClosable(false);
         tabWidget_5->setMovable(false);
@@ -2442,9 +2442,9 @@ public:
 "}\n"
 "#pushButton_103:hover{\n"
 "background-color: #dd914f;}"));
-        tableView = new QTableView(tab_25);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(330, 120, 311, 241));
+        tableView_4 = new QTableView(tab_25);
+        tableView_4->setObjectName(QString::fromUtf8("tableView_4"));
+        tableView_4->setGeometry(QRect(190, 140, 641, 281));
         tabWidget_5->addTab(tab_25, icon7, QString());
         tab_26 = new QWidget();
         tab_26->setObjectName(QString::fromUtf8("tab_26"));
@@ -2716,10 +2716,10 @@ public:
 "   background: #ffffff;\n"
 "   color: black;\n"
 "}"));
-        tabWidget_3->setTabPosition(QTabWidget::North);
-        tabWidget_3->setTabShape(QTabWidget::Rounded);
+        tabWidget_3->setTabPosition(QTabWidget::TabPosition::North);
+        tabWidget_3->setTabShape(QTabWidget::TabShape::Rounded);
         tabWidget_3->setIconSize(QSize(30, 30));
-        tabWidget_3->setElideMode(Qt::ElideNone);
+        tabWidget_3->setElideMode(Qt::TextElideMode::ElideNone);
         tabWidget_3->setDocumentMode(false);
         tabWidget_3->setTabsClosable(false);
         tabWidget_3->setMovable(false);
@@ -2854,7 +2854,7 @@ public:
 "background-color: #dd914f;}"));
         tableView_3 = new QTableView(tab_13);
         tableView_3->setObjectName(QString::fromUtf8("tableView_3"));
-        tableView_3->setGeometry(QRect(290, 130, 311, 241));
+        tableView_3->setGeometry(QRect(250, 150, 561, 281));
         tabWidget_3->addTab(tab_13, icon7, QString());
         tab_14 = new QWidget();
         tab_14->setObjectName(QString::fromUtf8("tab_14"));
@@ -2894,7 +2894,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_33->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_33->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_61 = new QLabel(tab_14);
         label_61->setObjectName(QString::fromUtf8("label_61"));
         label_61->setGeometry(QRect(90, 180, 121, 51));
@@ -2921,7 +2921,7 @@ public:
 "    outline: none;\n"
 "    background-color: #fff;\n"
 "}"));
-        lineEdit_34->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        lineEdit_34->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
         label_62 = new QLabel(tab_14);
         label_62->setObjectName(QString::fromUtf8("label_62"));
         label_62->setGeometry(QRect(500, 180, 121, 51));
@@ -3026,7 +3026,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1695, 26));
+        menubar->setGeometry(QRect(0, 0, 1695, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -3034,9 +3034,9 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(2);
         tabWidget->setCurrentIndex(0);
-        tabWidget_2->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(2);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
@@ -3069,9 +3069,9 @@ public:
         pushButton_8->setText(QCoreApplication::translate("MainWindow", "    Workshops", nullptr));
         lineEdit_7->setPlaceholderText(QCoreApplication::translate("MainWindow", " Search", nullptr));
         label_12->setText(QString());
-        comboBox_2->setItemText(0, QCoreApplication::translate("MainWindow", "Salary", nullptr));
-        comboBox_2->setItemText(1, QCoreApplication::translate("MainWindow", "Rate", nullptr));
-        comboBox_2->setItemText(2, QCoreApplication::translate("MainWindow", "Seniority", nullptr));
+        comboBox_2->setItemText(0, QCoreApplication::translate("MainWindow", "      Salary", nullptr));
+        comboBox_2->setItemText(1, QCoreApplication::translate("MainWindow", "      Rate", nullptr));
+        comboBox_2->setItemText(2, QCoreApplication::translate("MainWindow", "      Seniority", nullptr));
 
         pushButton_9->setText(QCoreApplication::translate("MainWindow", "Filter", nullptr));
         pushButton_10->setText(QCoreApplication::translate("MainWindow", "Send E-Mail", nullptr));
@@ -3086,24 +3086,26 @@ public:
         label_16->setText(QCoreApplication::translate("MainWindow", "Last Name", nullptr));
         label_17->setText(QCoreApplication::translate("MainWindow", "Gender", nullptr));
         label_18->setText(QCoreApplication::translate("MainWindow", "Age", nullptr));
+        label_19->setText(QCoreApplication::translate("MainWindow", "Email", nullptr));
         lineEdit_9->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter First Name", nullptr));
         lineEdit_10->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Age", nullptr));
         lineEdit_11->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Last Name", nullptr));
+        lineEdit_12->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Email", nullptr));
         comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "          Select Gender", nullptr));
-        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "Male", nullptr));
-        comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "Female", nullptr));
-        comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "Other", nullptr));
+        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "                Male", nullptr));
+        comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "                Female", nullptr));
+        comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "                Other", nullptr));
 
         comboBox_3->setPlaceholderText(QString());
         label_20->setText(QCoreApplication::translate("MainWindow", "Job", nullptr));
         lineEdit_13->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Phone Number", nullptr));
         label_21->setText(QCoreApplication::translate("MainWindow", "Phone Number", nullptr));
         comboBox_4->setItemText(0, QCoreApplication::translate("MainWindow", "             Select job", nullptr));
-        comboBox_4->setItemText(1, QCoreApplication::translate("MainWindow", "Mechanic", nullptr));
-        comboBox_4->setItemText(2, QCoreApplication::translate("MainWindow", "Electrician", nullptr));
-        comboBox_4->setItemText(3, QCoreApplication::translate("MainWindow", "Worshop Manager", nullptr));
-        comboBox_4->setItemText(4, QCoreApplication::translate("MainWindow", "Car Painter", nullptr));
-        comboBox_4->setItemText(5, QCoreApplication::translate("MainWindow", "HR Manager", nullptr));
+        comboBox_4->setItemText(1, QCoreApplication::translate("MainWindow", "                Mechanic", nullptr));
+        comboBox_4->setItemText(2, QCoreApplication::translate("MainWindow", "                Electrician", nullptr));
+        comboBox_4->setItemText(3, QCoreApplication::translate("MainWindow", "            Worshop Manager", nullptr));
+        comboBox_4->setItemText(4, QCoreApplication::translate("MainWindow", "                Car Painter", nullptr));
+        comboBox_4->setItemText(5, QCoreApplication::translate("MainWindow", "                HR Manager", nullptr));
 
         label_22->setText(QCoreApplication::translate("MainWindow", "Date of Hire", nullptr));
         pushButton_14->setText(QString());
@@ -3129,8 +3131,6 @@ public:
         pushButton_34->setText(QCoreApplication::translate("MainWindow", "Filter", nullptr));
         pushButton_35->setText(QCoreApplication::translate("MainWindow", "Nearest Worshop", nullptr));
         pushButton_36->setText(QCoreApplication::translate("MainWindow", "Generate PDF", nullptr));
-        pushButton_37->setText(QCoreApplication::translate("MainWindow", "Update", nullptr));
-        pushButton_38->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         pushButton_39->setText(QCoreApplication::translate("MainWindow", "Scan License Plate", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_7), QCoreApplication::translate("MainWindow", "List Of Clients", nullptr));
         label_37->setText(QCoreApplication::translate("MainWindow", "                                    CLIENT FORM", nullptr));
@@ -3142,18 +3142,18 @@ public:
         label_42->setText(QCoreApplication::translate("MainWindow", "Address", nullptr));
         lineEdit_22->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter First Name", nullptr));
         lineEdit_23->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Last Name", nullptr));
-        lineEdit_24->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Adress", nullptr));
-        comboBox_8->setItemText(0, QCoreApplication::translate("MainWindow", "    Select your Breakdown", nullptr));
-        comboBox_8->setItemText(1, QCoreApplication::translate("MainWindow", "    Engine Failures", nullptr));
-        comboBox_8->setItemText(2, QCoreApplication::translate("MainWindow", "    Electrical Breakdowns", nullptr));
-        comboBox_8->setItemText(3, QCoreApplication::translate("MainWindow", "    Braking Problems", nullptr));
-        comboBox_8->setItemText(4, QCoreApplication::translate("MainWindow", "    Tire-ralated Breakdowns", nullptr));
-        comboBox_8->setItemText(5, QCoreApplication::translate("MainWindow", "    Other", nullptr));
+        lineEdit_24->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Address", nullptr));
+        comboBox_8->setItemText(0, QCoreApplication::translate("MainWindow", "Select your Breakdown", nullptr));
+        comboBox_8->setItemText(1, QCoreApplication::translate("MainWindow", "Engine Failures", nullptr));
+        comboBox_8->setItemText(2, QCoreApplication::translate("MainWindow", "Electrical Breakdowns", nullptr));
+        comboBox_8->setItemText(3, QCoreApplication::translate("MainWindow", "Braking Problems", nullptr));
+        comboBox_8->setItemText(4, QCoreApplication::translate("MainWindow", "Tire-ralated Breakdowns", nullptr));
+        comboBox_8->setItemText(5, QCoreApplication::translate("MainWindow", "Other", nullptr));
 
         comboBox_8->setPlaceholderText(QString());
         lineEdit_25->setPlaceholderText(QCoreApplication::translate("MainWindow", "  Enter Phone Number", nullptr));
         label_43->setText(QCoreApplication::translate("MainWindow", "Phone Number", nullptr));
-        label_44->setText(QCoreApplication::translate("MainWindow", "Date", nullptr));
+        label_44->setText(QCoreApplication::translate("MainWindow", "Date ", nullptr));
         pushButton_40->setText(QString());
         label_45->setText(QCoreApplication::translate("MainWindow", "Upload \n"
 "Client \n"
